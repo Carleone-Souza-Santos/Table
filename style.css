@@ -1,0 +1,136 @@
+*{                                   /*posicionamento dos elementos no inicio*/
+    margin: 0;
+    padding: 0;
+   } 
+                                       /*Altura da pag principal*/
+   html{    
+       height: 100%;
+   }
+   
+   .form{                         /*parte de fundo que esta acima as ul. li*/
+   width: 100%;   
+   height: 8vh; 
+   background: -webkit-gradient(linear, left top, left bottom, from(rgb(167, 88, 88)), to(#fff)) repeat-X;
+   display: flex;
+   align-items: center;
+  
+   }
+   
+   
+   .form ul {                        /*parte que agrupa as ul*/
+   list-style: none;
+   display: flex;
+   width: 100%;
+   height: 25px;
+   justify-content: space-evenly;
+   margin: 300px;
+
+   }
+   
+   .form ul li{                       /*parte que agrupa as li*/
+   color: rgb(0, 0, 0);
+   cursor: pointer;
+   width: 100px;
+   height: 8vh; 
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+
+   }
+   
+   .form ul li:hover{                 /*efeito sobre o li , não funciona em mobile...nescessario javascript*/
+    color: brown;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 14px;
+       transition: 1s ease;
+
+   }
+
+
+   h2{                                          /* Ficha de paciente */
+    margin-top: 8%;
+    font-size: 28px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: brown;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+     
+    }
+ 
+   
+   .conteiner{                         /*parte que agrupa as tr td da tabela*/
+     
+       margin-top: 2%;
+       display: flex;
+       justify-content: center;
+       padding: 1vh;
+       margin-bottom: 11em;
+  
+   }
+   
+
+   td{                                 /*parte que agrupa os elementos dentro da tabela*/
+       width: 100px;
+       text-align: center;
+       font-size: 18px;
+       font-family: 'Times New Roman', Times, serif;
+       border: 1px solid black;
+       justify-content: center;
+   }
+                                      /* id criado para estilizar um elemento da tabela */
+   #cor{
+    color: brown;  
+   }
+
+ 
+
+
+p{
+    
+    align-items: center;
+    font-size: 10px;
+    -webkit-text-stroke-width: 0.6px;
+     color: #000000;
+}
+
+   
+  
+   
+   footer{                                   /*rodapé do site*/
+       min-width: 600px;  
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: rgb(7, 7, 7);
+       height: 43px;
+       background-color: rgba(0, 0, 0, 0.589);
+       background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(167, 88, 88))) repeat-X;
+   }
+
+   
+
+   @media(min-width:225px )  /* aplicando responsividade*/
+    { 
+       
+    {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+    } 
+
+    }
+   
+    @media (max-width: 480px) {
+        h2 {
+          font-size: 160px;
+        }
+      }
+
+
+   
